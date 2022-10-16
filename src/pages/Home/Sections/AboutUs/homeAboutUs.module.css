@@ -1,0 +1,187 @@
+:root {
+  --H-AU-pd-container: 80px 140px 100px; /*container padding*/
+  --H-AU-fs-paragraph: 1.3rem; /* paragraph font size*/
+  --H-AU-lh-paragraph: 35px; /* paragraph line height */
+}
+
+/* About us section */
+
+.home-aboutUs-WhoAreWe {
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+  margin-bottom: 100px;
+}
+
+.home-aboutUs-images {
+  position: relative;
+}
+
+.home-aboutUs-leftgirl,
+.home-aboutUs-rightgroup {
+  width: 300px;
+}
+
+.home-aboutUs-rightgroup {
+  position: absolute;
+  top: 155px;
+  left: 155px;
+}
+
+.home-aboutUs-title,
+.home-aboutUs-paragraph {
+  color: #2f2f2f;
+  font-family: "Bahnschrift";
+}
+
+.home-aboutUs-title {
+  font-size: 3.2rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  line-height: 85px;
+  margin-top: 3px;
+}
+
+.home-aboutUs-paragraph {
+  font-weight: 400;
+  font-size: var(--H-AU-fs-paragraph);
+  line-height: var(--H-AU-lh-paragraph);
+  text-align: justify;
+  margin-top: 15px;
+}
+
+@media all and (max-width: 1200px) {
+  :root {
+    --H-AU-pd-container: 70px 60px 30px;
+    --H-AU-fs-paragraph: 1.2rem;
+    --H-AU-lh-paragraph: 32px;
+  }
+
+  .home-aboutUs-WhoAreWe {
+    gap: 200px;
+    margin-bottom: 30px;
+  }
+
+  .home-aboutUs-leftgirl,
+  .home-aboutUs-rightgroup {
+    width: 230px;
+  }
+
+  .home-aboutUs-rightgroup {
+    left: 145px;
+  }
+
+  .home-aboutUs-title {
+    font-size: 3rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0px;
+    line-height: 50px;
+    margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  :root {
+    --H-AU-lh-paragraph: 29px;
+  }
+  .home-aboutUs-paragraph {
+    margin-top: 5px;
+  }
+}
+@media all and (max-width: 960px) {
+  :root {
+    --H-AU-pd-container: 60px 40px 10px;
+    --H-AU-fs-paragraph: 1.08rem;
+    --H-AU-lh-paragraph: 25px;
+  }
+
+  .home-aboutUs-WhoAreWe {
+    gap: 170px;
+    margin-bottom: 10px;
+  }
+
+  .home-aboutUs-leftgirl,
+  .home-aboutUs-rightgroup {
+    width: 200px;
+  }
+
+  .home-aboutUs-rightgroup {
+    top: 120px;
+    left: 135px;
+  }
+
+  .home-aboutUs-title {
+    font-size: 2.3rem;
+    letter-spacing: 0em;
+    margin-bottom: 5px;
+    margin-top: 9px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .home-aboutUs-WhoAreWe {
+    flex-direction: column-reverse;
+  }
+
+  .home-aboutUs-WhoAreWe {
+    gap: 25px;
+  }
+
+  .home-aboutUs-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  .home-aboutUs-title {
+    font-size: 2.2rem;
+    margin-top: 5px;
+  }
+
+  .home-aboutUs-leftgirl,
+  .home-aboutUs-rightgroup {
+    width: 45%;
+  }
+
+  .home-aboutUs-rightgroup {
+    position: static;
+  }
+}
+
+@media all and (max-width: 600px) {
+  :root {
+    --H-AU-pd-container: 20px 30px 40px;
+    --H-AU-fs-paragraph: 1rem;
+    --H-AU-lh-paragraph: 27px;
+  }
+
+  .home-aboutUs-WhoAreWe {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .home-aboutUs-title {
+    font-size: 2.1rem;
+  }
+
+  .home-aboutUs-images {
+    gap: 17px;
+    margin-top: 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  :root {
+    --H-AU-pd-container: 30px 25px 0px;
+    --H-AU-fs-paragraph: 0.9rem;
+    --H-AU-lh-paragraph: 21px;
+  }
+
+  .home-aboutUs-title {
+    font-size: 2rem;
+  }
+
+  .home-aboutUs-images {
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,235 @@
+/*Service and More Cards styling*/
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,400;1,500;1,700&display=swap");
+
+:root {
+  --S-fs-heading: 1.6rem; /* heading font size */
+  --S-fs-paragraph: 1.15rem; /* paragraph font size*/
+  --S-fs-S-btn: 1.2rem; /* button font size */
+  --S-lh-paragraph: 28px; /* paragraph line height */
+  --S-w-logo: 120px; /* service-logo width */
+}
+
+.servicePage {
+  padding: var(--pd-c);
+}
+
+/*Service Card section*/
+.services-cardSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem 1.5rem;
+}
+
+.services-moreDetails {
+  font-family: "Inter";
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.serviceCard {
+  padding: 30px 0px;
+  width: 370px;
+  height: 410px;
+  background-color: #bcebfc;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.35s ease-in-out;
+  box-shadow: rgba(69, 69, 87, 0.25) 0px 8px 20px -5px,
+    rgba(134, 134, 134, 0.3) 0px 4px 8px -4px;
+}
+
+.serviceCard:hover {
+  color: white;
+  background-color: #3fbfe9;
+  transform: translateY(-5px);
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.services-logo {
+  width: var(--S-w-logo);
+  transition: 0.5s ease-in;
+}
+
+.services-aboutLogo {
+  margin: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-cardName {
+  font-family: "Inter";
+  font-size: var(--S-fs-heading);
+  font-weight: 700;
+  transition: transform 0.5s ease-in;
+}
+
+.services-cardDescription {
+  font-family: "Roboto";
+  padding: 8px 10px;
+  font-weight: 400;
+  font-size: var(--S-fs-paragraph);
+  transition: transform 0.5s ease-in;
+  line-height: var(--S-lh-paragraph);
+}
+
+.services-contactButton {
+  border-radius: 26px;
+  font-family: "Roboto";
+  font-size: var(--S-fs-S-btn);
+  font-weight: 600;
+  padding: 13px 50px;
+  color: #2f2f2f;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90deg, #62cff5, #c091fc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fbfbfd inset;
+  transition: 0.35s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.services-contactButton:hover {
+  border: solid 2px white;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+  color: white;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90deg, #62cff5, #c091fc);
+  transform: translateY(-2px);
+}
+
+@media all and (max-width: 1500px) {
+  :root {
+    --S-fs-heading: 1.3rem;
+    --S-fs-paragraph: 0.95rem;
+    --S-fs-S-btn: 0.95rem;
+    --S-lh-paragraph: 20px;
+    --S-w-logo: 100px;
+  }
+  .services-cardSection {
+    gap: 2.7rem 1.2rem;
+  }
+
+  .serviceCard {
+    padding: 28px 0px;
+    width: 285px;
+    height: 330px;
+  }
+
+  .service-cardDescription {
+    padding: 7px 5px;
+  }
+
+  .service-contactButton {
+    padding: 10px 45px;
+  }
+}
+@media all and (max-width: 1200px) {
+  :root {
+    --S-fs-heading: 1.2rem;
+    --S-fs-paragraph: 0.9rem;
+    --S-fs-S-btn: 0.9rem;
+    --S-w-logo: 85px;
+  }
+
+  .serviceCard {
+    width: 260px;
+    height: 300px;
+  }
+  .service-contactButton {
+    padding: 9px 25px;
+  }
+}
+
+/*single card optimization*/
+
+@media all and (max-width: 960px) {
+  :root {
+    --S-w-logo: 90px;
+  }
+
+  .serviceCard {
+    padding: 24px 0px;
+    width: 250px;
+    height: 305px;
+  }
+
+  .service-cardDescription {
+    padding: 4px 2px;
+  }
+
+  .service-contactButton {
+    padding: 8px 28px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  :root {
+    --S-fs-paragraph: 1rem;
+    --S-fs-S-btn: 1rem;
+    --S-lh-paragraph: 23px;
+    --S-w-logo: 105px;
+  }
+
+  .service-CardSection {
+    gap: 2.5rem 1.4rem;
+  }
+
+  .serviceCard {
+    padding: 35px 0px;
+    width: 320px;
+  }
+
+  .service-cardDescription {
+    padding: 4px 4px;
+  }
+
+  .service-contactButton {
+    padding: 10px 40px;
+  }
+}
+
+/*Mobile optimization*/
+@media all and (max-width: 400px) {
+  :root {
+    --S-fs-S-btn: 0.95rem;
+    --S-lh-paragraph: 22px;
+    --S-w-logo: 90px;
+  }
+
+  .service-CardSection {
+    gap: 1.5rem 1.4rem;
+  }
+
+  .serviceCard {
+    padding: 30px 0px;
+    width: 90%;
+    min-width: 140px;
+  }
+  .service-cardName {
+    margin-top: 0px;
+  }
+
+  .service-contactButton {
+    padding: 10px 20px;
+  }
+}

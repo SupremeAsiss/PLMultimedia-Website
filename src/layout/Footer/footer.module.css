@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+:root {
+  --F-pd-container: 60px 140px 30px; /*container padding*/
+  --F-fs-heading: 1.8rem; /* heading font size */
+  --F-fs-companyName: 2rem; /* company name font size */
+  --F-fs-paragraph: 1.15rem; /* paragraph font size*/
+  --F-mb-paragraph: 15px; /* margin bottom for links */
+  --F-fs-socialIcons: 2.5rem; /* social icons font size */
+  --F-w-logoImage: 70px; /* company logo width */
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: var(--F-pd-container);
+  bottom: 0;
+  box-shadow: 0px -5px 45px rgb(187, 187, 187);
+  position: relative;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px 20px;
+}
+/* slogan section */
+
+.footer-companyDetail-container {
+  flex: 1.2;
+  margin-right: 30px;
+  min-width: 300px;
+}
+
+.footer-companyName-container img {
+  width: var(--F-w-logoImage);
+}
+
+.footer-companyName-container {
+  margin-bottom: 10px;
+}
+
+.footer-companyName {
+  font-size: var(--F-fs-companyName);
+  font-family: "Cabin", sans-serif;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  margin-left: 10px;
+}
+.footer-companyDetail-container p {
+  font-size: var(--F-fs-paragraph);
+  font-family: "Roboto";
+  color: #2f2f2f;
+  font-weight: 600;
+  position: relative;
+  max-width: 300px;
+  line-height: 33px;
+}
+
+/*our services */
+.footer-column {
+  flex: 1;
+}
+.footer-column h4 {
+  font-size: var(--F-fs-heading);
+  font-family: "Bahnschrift";
+  color: #2f2f2f;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li:not(:last-child) {
+  margin-bottom: var(--F-mb-paragraph);
+  text-decoration: none;
+}
+
+.footer-services {
+  flex: 1;
+}
+
+.footer-column ul li a {
+  font-size: var(--F-fs-paragraph);
+  font-family: "Roboto";
+  color: #636363;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.footer-column ul li a:hover {
+  color: #3d3d3d;
+  margin-left: 4px;
+}
+
+/* get in touch section */
+
+.footer-getInTouch {
+  flex: 1;
+}
+
+.footer-getInTouch p {
+  font-size: var(--F-fs-paragraph);
+  font-family: "Roboto";
+  color: #636363;
+  margin-bottom: var(--F-mb-paragraph);
+  font-weight: 600;
+  position: relative;
+  line-height: 24px;
+}
+
+/*footer icons selector*/
+.footer-icons .envelope,
+.footer-icons .instagram,
+.footer-icons .facebook,
+.footer-icons .linkedin {
+  color: #2f2f2f;
+  font-size: var(--F-fs-socialIcons);
+  transition: all 0.3s;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 25px;
+  transition: all 0.3s;
+}
+/*footer icons hover effects*/
+.footer-icons .envelope:hover {
+  color: #00acee;
+}
+.footer-icons .linkedin:hover {
+  color: #0072b1;
+}
+
+.footer-icons .instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-icons .facebook:hover {
+  color: #3b5998;
+}
+
+.footer-copyright {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.footer-copyrightSymbol {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.footer-payment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #636363;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 600;
+  position: relative;
+  line-height: 33px;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 10px;
+}
+.footer-khaltiLogo,
+.footer-esewaLogo {
+  width: 110px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-khaltiLogo:hover,
+.footer-esewaLogo:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 1200px) {
+  :root {
+    --F-pd-container: 50px 60px 20px;
+    --F-fs-heading: 1.6rem;
+    --F-fs-companyName: 2rem;
+    --F-mb-paragraph: 12px;
+    --F-fs-paragraph: 1rem;
+    --F-fs-socialIcons: 1.7rem;
+    --F-w-logoImage: 60px;
+  }
+
+  .footer-companyDetail-container p {
+    line-height: 30px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-getInTouch {
+    min-width: 130px;
+  }
+
+  .footer-services {
+    min-width: fit-content;
+  }
+  .footer-payment {
+    font-size: 1.17rem;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .footer-logo {
+    gap: 20px;
+  }
+  .footer-khaltiLogo,
+  .footer-esewaLogo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --F-pd-container: 50px 60px 20px;
+    --F-fs-heading: 1.375rem;
+    --F-fs-companyName: 1.3rem;
+    --F-fs-paragraph: 0.9rem;
+    --F-mb-paragraph: 15px;
+    --F-fs-socialIcons: 1.7rem;
+    --F-w-logoImage: 45px;
+  }
+
+  .footer-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-companyDetail-container {
+    margin-right: 15px;
+    min-width: 240px;
+  }
+
+  .footer-companyName-container {
+    margin-bottom: 5px;
+  }
+
+  .footer-companyDetail-container p {
+    font-size: 15px;
+    line-height: 29px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 18px;
+  }
+
+  .footer-getInTouch {
+    min-width: 200px;
+  }
+
+  .footer-icons {
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+    margin-top: 50px;
+  }
+
+  .footer-copyrightSymbol {
+    font-size: 1.2rem;
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-payment {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --F-pd-container: 50px 60px 20px;
+    --F-fs-heading: 1.3rem;
+    --F-fs-companyName: 1.3rem;
+    --F-fs-paragraph: 0.875rem;
+    --F-mb-paragraph: 7px;
+    --F-fs-socialIcons: 1.7rem;
+    --F-w-logoImage: 40px;
+  }
+
+  .footer-companyDetail-container {
+    margin-right: 0px;
+    min-width: 200px;
+  }
+
+  .footer-companyDetail-container p {
+    line-height: 24px;
+    max-width: 240px;
+  }
+
+  .footer-column {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-getInTouch {
+    min-width: 250px;
+  }
+
+  .footer-icons {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --F-pd-container: 30px 25px 10px;
+    --F-fs-heading: 1.3rem;
+    --F-fs-companyName: 1.5rem;
+    --F-fs-paragraph: 0.9rem;
+    --F-mb-paragraph: 10px;
+    --F-fs-socialIcons: 1.9rem;
+    --F-w-logoImage: 40px;
+  }
+
+  .footer-column h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-getInTouch {
+    max-width: 200px;
+  }
+
+  .footer-icons {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .footer-payment {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    --F-pd-container: 30px 25px 10px;
+    --F-fs-heading: 1.3rem;
+    --F-fs-companyName: 1.3rem;
+    --F-fs-paragraph: 0.8rem;
+    --F-mb-paragraph: 5px;
+    --F-fs-socialIcons: 1.5rem;
+  }
+
+  .footer-companyName-container {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+
+  .footer-companyDetail-container p {
+    line-height: 20px;
+    max-width: 230px;
+    font-weight: 500;
+  }
+
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+  }
+
+  .footer-column ul li a {
+    font-weight: 500;
+  }
+
+  .footer-getInTouch {
+    min-width: fit-content;
+  }
+
+  .footer-icons {
+    max-width: 100px;
+  }
+}

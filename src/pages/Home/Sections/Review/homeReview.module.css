@@ -1,0 +1,149 @@
+:root {
+  --H-R-w-image: 59px;
+  --H-R-fs-profileName: 1.35rem;
+  --H-R-fs-quote: 40px;
+  --H-R-fs-text: 1.1rem;
+  --H-R-lh-text: 35px;
+}
+
+.home-review-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-review-card {
+  width: 320px;
+  height: 360px;
+  background: #fffcff;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 22px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-review-profileImg {
+  width: var(--H-R-w-image);
+  clip-path: circle();
+}
+
+.home-review-profileName {
+  font-weight: 600;
+  font-size: var(--H-R-fs-profileName);
+  color: #6d7d8b;
+  font-family: "Roboto";
+  margin-top: -10px;
+}
+
+.home-review-rateUs {
+  display: flex;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.star {
+  color: #ffe234;
+}
+
+.home-review-container {
+  line-height: 30px;
+}
+
+.quote {
+  color: #6d7d8b;
+  margin-top: 15px;
+  font-size: var(--H-R-fs-quote);
+}
+
+.home-review-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: var(--H-R-fs-text);
+  color: #6d7d8b;
+  line-height: var(--H-R-lh-text);
+}
+
+@media all and (max-width: 1300px) {
+  :root {
+    --H-R-fs-profileName: 1.28rem;
+    --H-R-lh-text: 32rem;
+  }
+
+  .home-review-profileName {
+    margin-top: -7px;
+  }
+
+  .home-review-rateUs {
+    display: flex;
+    gap: 7px;
+    margin-top: 3px;
+  }
+
+  .quote {
+    margin-top: 15px;
+  }
+
+  .home-review-card {
+    width: 300px;
+    height: 320px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  :root {
+    --H-R-w-image: 50px;
+    --H-R-fs-profileName: 1.25rem;
+    --H-R-fs-quote: 30px;
+    --H-R-fs-text: 1.1rem;
+    --H-R-lh-text: 25px;
+  }
+
+  .home-review-card {
+    width: 280px;
+    padding: 26px;
+  }
+
+  .quote {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  :root {
+    --H-R-w-image: 55px;
+    --H-R-fs-profileName: 1.3rem;
+    --H-R-fs-quote: 35px;
+    --H-R-fs-text: 1.2rem;
+    --H-R-lh-text: 30px;
+  }
+
+  .home-review-card {
+    width: 320px;
+    padding: 30px;
+  }
+
+  .quote {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  :root {
+    --H-R-w-image: 50px;
+    --H-R-fs-profileName: 1.1rem;
+    --H-R-fs-quote: 30px;
+    --H-R-fs-text: 1rem;
+    --H-R-lh-text: 27px;
+  }
+
+  .home-review-card {
+    width: 250px;
+    height: 310px;
+    padding: 20px;
+  }
+
+  .quote {
+    margin-top: 5px;
+  }
+}
